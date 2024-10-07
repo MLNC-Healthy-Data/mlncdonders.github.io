@@ -6,7 +6,7 @@ import Footer from "./screens/components/Footer";
 function App() {
 
   return (
-    <BrowserRouter basename="/mlncdonders.github.io/">
+    <BrowserRouter basename="/radboud-healthy-data.github.io/">
     <Navbar></Navbar>
 
       <Routes>
