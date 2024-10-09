@@ -1,14 +1,14 @@
 import React from "react";
-
+import colors from "../../helpers/colors";
 function Footer() {
   return (
     <div
       style={{
         width: "80vw",
         height: "20vh",
-        backgroundColor: "#510648",
+        backgroundColor: colors.primary,
         padding: "3vh 10vw",
-        color: "white",
+        color: colors.textLight,
       }}
     >
       FOOTER HERE

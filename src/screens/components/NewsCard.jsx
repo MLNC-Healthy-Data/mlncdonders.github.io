@@ -1,9 +1,3 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
 
 function NewsCard() {
   const imgUrl =
@@ -15,10 +9,10 @@ function NewsCard() {
     >
       <img
         style={{
-          width: "100%", // Ensure the image takes full width of the parent div
-          height: "100%", // Ensure the image takes full height of the parent div
+          width: "100%", 
+          height: "100%",
           objectFit: "cover",
-          borderRadius: "4px", // Match the parent div's border radius
+          borderRadius: "4px", 
           position: "absolute",
         }}
         src={imgUrl}
@@ -30,11 +24,10 @@ function NewsCard() {
           position: "absolute",
           bottom: 0,
           left: 0,
-        //   width: "83%",
           padding: "1vh 2vw",
           backgroundColor: "#000000ab",
           color: "white",
-          borderRadius: "0 0 10px 10px", // Match the bottom border radius of the parent div
+          borderRadius: "0 0 10px 10px",
         }}
       >
         <div>News Title</div>

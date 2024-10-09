@@ -1,12 +1,13 @@
 import React from "react";
 import NewsCard from "./NewsCard";
+import colors from "../../helpers/colors";
 
 function NewsRow() {
   return (
     <div>
       <div
         style={{
-          backgroundColor: "#de6843aa",
+          backgroundColor: colors.accentTransparent,
           padding: "3vh 10vw",
           color: "white",
           fontSize: "24px",
