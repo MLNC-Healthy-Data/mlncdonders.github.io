@@ -20,31 +20,33 @@ function Header() {
         gap: { xs: 3, md: 6 },
       }}
     >
-      <Box
-        component="img"
-        src="https://www.healthvalley.nl/media/u25bgwv1/radboud-universiteit-logo.png"
-        alt="Donders Logo"
-        sx={{
-          width: { xs: "80%", md: "40%" }, 
-          maxWidth: "800px", 
-          borderRadius: "8px",
-        }}
-      />
+        <Box
+          component="img"
+          src='https://mercatorlaunch.nl/wp-content/uploads/2020/01/combinatielogo_universiteit_a_engels_cmyk_2.png'
+          alt="Radboud Logo"
+          sx={{
+            width: { xs: "80%", md: "40%" },
+            maxWidth: "800px",
+            marginLeft:'1vw',
+            borderRadius: "8px",
+          }}
+        />
+        
 
       <Box
         sx={{
           maxWidth: { xs: "100%", md: "50%" },
-          textAlign: { xs: "center", md: "left" }, 
+          textAlign: { xs: "center", md: "left" },
         }}
       >
         <Typography
           variant="h3"
           sx={{
             fontWeight: 700,
-            color: colors.primary, 
+            color: colors.primary,
             marginBottom: "1rem",
             textAlign: { xs: "center", md: "left" },
-            fontSize: { xs: "2rem", md: "3rem" }, 
+            fontSize: { xs: "2rem", md: "3rem" },
           }}
         >
           Welcome to Radboud Healthy Data
@@ -52,10 +54,10 @@ function Header() {
         <Typography
           variant="body1"
           sx={{
-            color: "#555", 
+            color: "#555",
             lineHeight: "1.6",
             marginBottom: "1.5rem",
-            fontSize: { xs: "1rem", md: "1.25rem" }, 
+            fontSize: { xs: "1rem", md: "1.25rem" },
           }}
         >
           Quis irure voluptate velit mollit do occaecat aliqua esse aute id
@@ -70,7 +72,7 @@ function Header() {
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             gap: 2,
-            justifyContent: { xs: "center", md: "flex-start" }, 
+            justifyContent: { xs: "center", md: "flex-start" },
           }}
         >
           <Button
@@ -81,7 +83,7 @@ function Header() {
               padding: "10px 20px",
               fontSize: "1rem",
               textTransform: "none",
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.15)", 
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.15)",
               "&:hover": {
                 backgroundColor: colors.accent,
               },

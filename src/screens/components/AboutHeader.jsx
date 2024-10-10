@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import colors from "../../helpers/colors";
-
+import rbLogo from "../../assets/logo-rb.png"
 function AboutHeader() {
   return (
     <Box
@@ -45,10 +45,15 @@ function AboutHeader() {
               height: "auto",
               borderRadius: "10px",
               boxShadow: "0px 4px 15px rgba(0,0,0,0.2)",
+              backgroundColor:'#ffffff',
+              padding:'1vh 2vw'
             }}
             alt="Radboud Universiteit"
-            src="https://www.ru.nl/sites/default/files/2023-08/RU_logo_NL_wit.png"
+            // src="https://www.ru.nl/sites/default/files/2023-08/RU_logo_NL_wit.png"
+            src='https://mercatorlaunch.nl/wp-content/uploads/2020/01/combinatielogo_universiteit_a_engels_cmyk_2.png'
           />
+          
+          
         </Grid>
       </Grid>
     </Box>

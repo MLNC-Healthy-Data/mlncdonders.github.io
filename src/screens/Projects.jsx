@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import CardComponent from "./components/CardComponent";
 import colors from "../helpers/colors";
+import projects from "../helpers/projects.json";
 
 function Projects() {
   return (
@@ -13,51 +14,18 @@ function Projects() {
           color: "white",
           fontSize: "24px",
         }}
-      >
-        
-      </div>
+      ></div>
       <Grid
         container
         spacing={5}
         justifyContent="center"
         sx={{ padding: "5vh 10vw", backgroundColor: colors.textLight }}
       >
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <CardComponent />
-        </Grid>
+        {projects.map((e) => (
+          <Grid item xs={12} sm={6} md={4}>
+            <CardComponent project={e} />
+          </Grid>
+        ))}
       </Grid>
     </div>
   );
