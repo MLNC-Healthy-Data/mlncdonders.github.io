@@ -1,17 +1,28 @@
 import React from "react";
 import colors from "../../helpers/colors";
+import { useTheme } from "@emotion/react";
+import { Box } from "@mui/material";
 function Footer() {
+  const theme = useTheme();
+
+  const customTextLight = theme.palette.custom.customTextLight;
+  const customPrimary = theme.palette.custom.customPrimary;
   return (
     <div
       style={{
-        width: "80vw",
+        width: "100vw",
         height: "20vh",
-        backgroundColor: colors.primary,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: customPrimary,
         padding: "3vh 10vw",
-        color: colors.textLight,
+        color: "white",
       }}
     >
-      FOOTER HERE
+     
+      © Radboud Healthy Data Consortium
     </div>
   );
 }

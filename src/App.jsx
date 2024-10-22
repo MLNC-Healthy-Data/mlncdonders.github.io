@@ -4,7 +4,6 @@ import Navbar from "./screens/components/Navbar";
 import Footer from "./screens/components/Footer";
 import Projects from "./screens/Projects";
 import About from "./screens/About";
-import People from "./screens/People";
 import ProjectTemplate from "./screens/ProjectTemplate";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
         <Route path="/projects" element={<Projects></Projects>}></Route>
         <Route path="/project/:pageIndex" element={<ProjectTemplate></ProjectTemplate>}></Route>
         <Route path="/about" element={<About></About>}></Route>
-        <Route path="/people" element={<People></People>}></Route>
 
       </Routes>
       <Footer></Footer>

@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Container, Typography, Box, List, ListItem } from "@mui/material";
-import colors from "../helpers/colors"; // Assuming you have colors defined
+import colors from "../helpers/colors";
 import projects from "../helpers/projects.json";
 import { useParams } from "react-router-dom";
 
 function ProjectTemplate() {
   const [project, setProject] = useState(null);
-  const { pageIndex } = useParams(); 
-  
+  const { pageIndex } = useParams();
+
   useEffect(() => {
-    setProject(projects[pageIndex - 1]); 
+    setProject(projects[pageIndex - 1]);
   }, []);
 
   if (!project) return <div>Loading...</div>;
@@ -17,15 +17,14 @@ function ProjectTemplate() {
   return (
     <Container
       sx={{
-        margin: "10vh 10vw", // Remove default margins
-        padding: "10vh 5vw", // Add padding for better spacing
-        height: "100vh", // Make it full height
-        minWidth: "80vw",
-        backgroundColor: "#FFFFFF", // Set background to white
-        display: "flex", // Use flexbox for layout
-        flexDirection: "column", // Stack items vertically
-        justifyContent: "start", // Center vertically
-        alignItems: "flex-start", // Align items to the left
+        margin: { xs: "5vh 5vw", sm: "10vh 5vw", md: "10vh 2vw" },
+        padding: { xs: "5vh 1vw", sm: "10vh 5vw", md: "10vh 5vw" },
+        // height: "100vh",
+        width:  { xs: "80vw", sm: "80vw", md: "85vw" },
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "start",
+        alignItems: "flex-start",
         borderRadius: "10px",
       }}
     >
@@ -34,6 +33,9 @@ function ProjectTemplate() {
         sx={{ fontWeight: 700, color: colors.textDark, marginBottom: "2vh" }}
       >
         {project.title}
+      </Typography>
+      <Typography variant="body1" sx={{ color: "blue", marginBottom: "2vh" }}>
+        <a href={project.URL}>Project Website </a>
       </Typography>
       <Typography
         variant="body1"
@@ -71,10 +73,10 @@ function ProjectTemplate() {
         variant="h5"
         sx={{ fontWeight: 600, color: colors.textDark, marginBottom: "1vh" }}
       >
-        Results
+        Contributor(s)
       </Typography>
       <Typography variant="body1" sx={{ color: colors.textDark }}>
-        {project.results}
+        {project.contributors}
       </Typography>
     </Container>
   );

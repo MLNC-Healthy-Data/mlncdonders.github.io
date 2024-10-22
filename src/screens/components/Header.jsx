@@ -2,9 +2,13 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import colors from "../../helpers/colors";
+import { useNavigate } from "react-router-dom";
+import getColors from "../../helpers/colors";
 
 function Header() {
+  const colors = getColors()
+  
+  let navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -14,25 +18,9 @@ function Header() {
         alignItems: "center",
         marginTop: "8vh",
         padding: "2vh 10vw",
-        backgroundColor: "#f5f5f5",
-        borderRadius: "16px",
-        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
         gap: { xs: 3, md: 6 },
       }}
     >
-        <Box
-          component="img"
-          src='https://mercatorlaunch.nl/wp-content/uploads/2020/01/combinatielogo_universiteit_a_engels_cmyk_2.png'
-          alt="Radboud Logo"
-          sx={{
-            width: { xs: "80%", md: "40%" },
-            maxWidth: "800px",
-            marginLeft:'1vw',
-            borderRadius: "8px",
-          }}
-        />
-        
-
       <Box
         sx={{
           maxWidth: { xs: "100%", md: "50%" },
@@ -40,7 +28,7 @@ function Header() {
         }}
       >
         <Typography
-          variant="h3"
+          variant="h5"
           sx={{
             fontWeight: 700,
             color: colors.primary,
@@ -54,7 +42,6 @@ function Header() {
         <Typography
           variant="body1"
           sx={{
-            color: "#555",
             lineHeight: "1.6",
             marginBottom: "1.5rem",
             fontSize: { xs: "1rem", md: "1.25rem" },
@@ -76,6 +63,7 @@ function Header() {
           }}
         >
           <Button
+            onClick={() => navigate("/about")}
             variant="contained"
             sx={{
               backgroundColor: colors.primary,
@@ -91,24 +79,20 @@ function Header() {
           >
             Learn More
           </Button>
-          <Button
-            variant="outlined"
-            sx={{
-              color: colors.primary,
-              borderColor: colors.primary,
-              padding: "10px 20px",
-              fontSize: "1rem",
-              textTransform: "none",
-              "&:hover": {
-                backgroundColor: colors.primary,
-                color: "white",
-              },
-            }}
-          >
-            Contact Us
-          </Button>
+
         </Box>
       </Box>
+      <Box
+        component="img"
+        src="https://mercatorlaunch.nl/wp-content/uploads/2020/01/combinatielogo_universiteit_a_engels_cmyk_2.png"
+        alt="Radboud Logo"
+        sx={{
+          width: { xs: "80%", md: "40%" },
+          maxWidth: "800px",
+          marginLeft: "1vw",
+          borderRadius: "8px",
+        }}
+      />
     </Box>
   );
 }

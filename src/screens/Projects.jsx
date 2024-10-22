@@ -22,7 +22,13 @@ function Projects() {
         sx={{ padding: "5vh 10vw", backgroundColor: colors.textLight }}
       >
         {projects.map((e) => (
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid
+            sx={{ marginBottom: { md: "20vh" } }}
+            item
+            xs={12}
+            sm={6}
+            md={4}
+          >
             <CardComponent project={e} />
           </Grid>
         ))}

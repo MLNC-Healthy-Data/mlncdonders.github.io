@@ -1,62 +1,40 @@
 [
     {
         "id": 1,
-        "title": "Effects of Climate Change on Coastal Ecosystems",
-        "description": "This project investigates the impact of climate change on coastal ecosystems, focusing on the changes in biodiversity and the adaptation strategies of various species.",
+        "title": "Healthy Data Decision Support Platform",
+        "URL": "https://github.com/Radboud-Healthy-Data", 
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa urna, dignissim ut nisi non, volutpat varius dui. Nulla vel facilisis tortor. Donec eget consectetur tortor, in sollicitudin lectus. Curabitur.",
         "objectives": [
-            "Analyze changes in species population over the past decade.",
-            "Evaluate the effectiveness of conservation efforts.",
-            "Develop recommendations for policy changes."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "methodology": "We conducted field studies, collected data using various ecological models, and analyzed the results using statistical software.",
-        "results": "The study revealed significant shifts in species populations and highlighted the need for immediate conservation actions."
+        "methodology": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa urna, dignissim ut nisi non, volutpat varius dui. Nulla vel facilisis tortor. Donec eget consectetur tortor, in sollicitudin lectus. Curabitur.",
+        "contributors": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "id": 2,
-        "title": "Innovations in Renewable Energy Technology",
-        "description": "Exploring the latest advancements in renewable energy technologies and their potential to reduce carbon emissions.",
+        "title": "Project 2",
+        "URL": "https://github.com/Radboud-Healthy-Data",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa urna, dignissim ut nisi non, volutpat varius dui. Nulla vel facilisis tortor. Donec eget consectetur tortor, in sollicitudin lectus. Curabitur.",
         "objectives": [
-            "Assess the efficiency of new solar panel designs.",
-            "Investigate the feasibility of wind energy in urban areas.",
-            "Analyze the economic impacts of transitioning to renewable sources."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "methodology": "We reviewed existing literature, conducted interviews with industry experts, and analyzed current market trends.",
-        "results": "Our findings indicate a promising future for renewable technologies with significant potential for carbon reduction."
-    },
-    {
+        "methodology": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa urna, dignissim ut nisi non, volutpat varius dui. Nulla vel facilisis tortor. Donec eget consectetur tortor, in sollicitudin lectus. Curabitur.",
+        "contributors": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },  {
         "id": 3,
-        "title": "The Role of Artificial Intelligence in Healthcare",
-        "description": "This project examines how artificial intelligence is transforming healthcare practices and improving patient outcomes.",
+        "title": "Project 3",
+        "URL": "https://github.com/Radboud-Healthy-Data",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa urna, dignissim ut nisi non, volutpat varius dui. Nulla vel facilisis tortor. Donec eget consectetur tortor, in sollicitudin lectus. Curabitur.",
         "objectives": [
-            "Evaluate AI applications in diagnostics and treatment.",
-            "Analyze patient data for improved healthcare delivery.",
-            "Explore ethical considerations of AI in medicine."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "methodology": "We conducted surveys of healthcare professionals, analyzed case studies, and reviewed relevant literature.",
-        "results": "The research shows that AI significantly enhances diagnostic accuracy and operational efficiency in healthcare settings."
-    },
-    {
-        "id": 4,
-        "title": "Sustainable Urban Development: Challenges and Solutions",
-        "description": "This project explores sustainable practices in urban development and the challenges cities face in implementing these solutions.",
-        "objectives": [
-            "Identify key barriers to sustainable urban planning.",
-            "Assess the impact of green infrastructure on urban resilience.",
-            "Propose actionable strategies for policy makers."
-        ],
-        "methodology": "We analyzed case studies from various cities, conducted interviews with urban planners, and reviewed sustainability reports.",
-        "results": "Our findings indicate that community engagement and policy integration are crucial for successful sustainable urban development."
-    },
-    {
-        "id": 5,
-        "title": "Advancements in Biotechnology for Agriculture",
-        "description": "Investigating how biotechnology is revolutionizing agricultural practices and enhancing food security.",
-        "objectives": [
-            "Analyze the impact of genetically modified organisms (GMOs) on crop yield.",
-            "Evaluate biotechnological innovations in pest management.",
-            "Investigate consumer perceptions of biotech foods."
-        ],
-        "methodology": "We conducted field trials, performed statistical analyses, and surveyed consumer attitudes towards biotechnology in agriculture.",
-        "results": "The study demonstrates that biotechnology can significantly improve crop resilience and yield, although public acceptance varies."
+        "methodology": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa urna, dignissim ut nisi non, volutpat varius dui. Nulla vel facilisis tortor. Donec eget consectetur tortor, in sollicitudin lectus. Curabitur.",
+        "contributors": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
 ]

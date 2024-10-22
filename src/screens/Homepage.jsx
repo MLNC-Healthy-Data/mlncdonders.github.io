@@ -10,7 +10,6 @@ function Homepage() {
       <Header></Header>
       <Divider></Divider>
       <CardsRow></CardsRow>
-      <NewsRow></NewsRow>
     </div>
   );
 }

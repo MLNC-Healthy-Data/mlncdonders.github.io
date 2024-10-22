@@ -2,9 +2,8 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import colors from "../../helpers/colors";
+import AboutStepComponent from "./AboutStepComponent";
 
 function AboutComponent() {
   return (
@@ -24,108 +23,55 @@ function AboutComponent() {
           marginBottom: "3vh",
         }}
       >
-        About
+        Contributing to RHD
+      </Typography>
+      <Typography
+        variant="h5"
+        gutterBottom
+        sx={{
+          textAlign: "center",
+          color: colors.textLight,
+          marginBottom: "3vh",
+        }}
+      >
+        To contribute to the RHD Software Platform a number of steps need to be
+        followed:
       </Typography>
       <Grid container spacing={4}>
-        <Grid item xs={12} md={4}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-          >
-            <IconButton
-              sx={{
-                color: colors.accent,
-                fontSize: "48px",
-                marginBottom: "1vh",
-              }}
-            >
-              <CheckCircleIcon sx={{ fontSize: "48px" }} />
-            </IconButton>
-            <Typography
-              variant="h5"
-              gutterBottom
-              sx={{ textAlign: "center", fontWeight: 600 }}
-            >
-              Section 1
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ textAlign: "center", maxWidth: "300px" }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            </Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-          >
-            <IconButton
-              sx={{
-                color: colors.accent,
-                fontSize: "48px",
-                marginBottom: "1vh",
-              }}
-            >
-              <CheckCircleIcon sx={{ fontSize: "48px" }} />
-            </IconButton>
-            <Typography
-              variant="h5"
-              gutterBottom
-              sx={{ textAlign: "center", fontWeight: 600 }}
-            >
-              Section 2
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ textAlign: "center", maxWidth: "300px" }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            </Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-          >
-            <IconButton
-              sx={{
-                color: colors.accent,
-                fontSize: "48px",
-                marginBottom: "1vh",
-              }}
-            >
-              <CheckCircleIcon sx={{ fontSize: "48px" }} />
-            </IconButton>
-            <Typography
-              variant="h5"
-              gutterBottom
-              sx={{ textAlign: "center", fontWeight: 600 }}
-            >
-              Section 3
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ textAlign: "center", maxWidth: "300px" }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            </Typography>
-          </Box>
-        </Grid>
+        <AboutStepComponent
+          heading={"1 - Project Name"}
+          desc={
+            "The official name of your project."
+          }
+        ></AboutStepComponent>
+        <AboutStepComponent
+          heading={"2 - Project URL"}
+          desc={
+            "The URL to your project's website, GitHub repository, or relevant online resource."
+          }
+        ></AboutStepComponent>
+        <AboutStepComponent
+          heading={"3 - Description"}
+          desc={
+            "A concise summary highlighting the key aspects and scope of your project."
+          }
+        ></AboutStepComponent>
+        <AboutStepComponent
+          heading={"4 - Objectives"}
+          desc={"The primary goals your project aims to achieve."}
+        ></AboutStepComponent>
+        <AboutStepComponent
+          heading={"5 - Methodology"}
+          desc={
+            "The approach, tools, and techniques used to execute the project."
+          }
+        ></AboutStepComponent>
+        <AboutStepComponent
+          heading={"6 - Contributors"}
+          desc={
+            "The people or teams involved in developing and supporting the project."
+          }
+        ></AboutStepComponent>
       </Grid>
     </Box>
   );

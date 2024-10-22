@@ -13,11 +13,18 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import colors from "../../helpers/colors";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import DarkModeSwitch from "./DarkModeSwitch";
+import { useTheme } from "@mui/material";
 
-const pages = ["Projects", "About", "People"];
+const pages = ["About", "Projects"];
 
 function Navbar() {
   let navigate = useNavigate();
+  const theme = useTheme();  
+
+  const customAccent = theme.palette.custom.customAccent;
+  const customPrimary = theme.palette.custom.customPrimary;
+
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -29,27 +36,25 @@ function Navbar() {
     setAnchorElNav(null);
   };
   const handleNavigate = (page) => {
-    const lowerPage = page.toLowerCase()
-    navigate(`/${lowerPage}`)
-    console.log(lowerPage);
-    
-  }
- const logoUrl = 'https://www.ru.nl/sites/default/files/2023-08/RU_logo_NL_wit.png'
+    const lowerPage = page.toLowerCase();
+    navigate(`/${lowerPage}`);
+  };
+  const logoUrl =
+    "https://www.ru.nl/sites/default/files/2023-08/RU_logo_NL_wit.png";
   const trigger = useScrollTrigger();
 
   return (
     <Slide appear={false} direction="down" in={!trigger}>
       <AppBar
         style={{
-          backgroundColor: "rgba(183,44,21, 0.9)", 
-          boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)", 
-          backdropFilter: "blur(10px)", 
+          backgroundColor: customPrimary,
+          boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
+          backdropFilter: "blur(10px)",
         }}
-        position="fixed" 
+        position="fixed"
       >
         <Container style={{ width: "100vw", padding: "0 2vw" }} maxWidth="xl">
           <Toolbar disableGutters>
-            
             <Typography
               variant="h6"
               noWrap
@@ -59,12 +64,12 @@ function Navbar() {
                 mr: 2,
                 display: { xs: "none", md: "flex" },
                 fontWeight: 600,
-                fontSize: "22px", 
-                color: "#fff", 
+                fontSize: "22px",
+                color: "#fff",
                 textDecoration: "none",
                 transition: "color 0.3s",
                 "&:hover": {
-                  color: colors.accent, 
+                  color: customAccent,
                 },
               }}
             >
@@ -107,10 +112,10 @@ function Navbar() {
                       sx={{
                         fontSize: "18px",
                         fontWeight: 500,
-                        color: colors.primary,
+                        color: customPrimary,
                         transition: "color 0.3s",
                         "&:hover": {
-                          color: colors.accent,
+                          color: customAccent,
                         },
                       }}
                       onClick={() => handleNavigate(page)}
@@ -145,7 +150,6 @@ function Navbar() {
                 <Button
                   key={page}
                   onClick={() => handleNavigate(page)}
-
                   sx={{
                     my: 2,
                     color: "white",
@@ -157,8 +161,8 @@ function Navbar() {
                     borderRadius: "8px",
                     transition: "all 0.3s",
                     "&:hover": {
-                      backgroundColor: colors.accent, 
-                      transform: "scale(1.05)", 
+                      backgroundColor: customAccent,
+                      transform: "scale(1.05)",
                     },
                   }}
                 >
@@ -166,6 +170,8 @@ function Navbar() {
                 </Button>
               ))}
             </Box>
+            <DarkModeSwitch></DarkModeSwitch>
+
           </Toolbar>
         </Container>
       </AppBar>
